@@ -1,0 +1,20 @@
+{
+  "name": "surge-attack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alikhamesy/surge-attack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alikhamesy/surge-attack/issues"
+  },
+  "homepage": "https://github.com/alikhamesy/surge-attack#readme"
+}
