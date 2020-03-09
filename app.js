@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
   // client.query("SELECT NOW()", (err, res1) => {
   //   res.send(res1.rows[0])
   // })
+  console.log(`i check: ${i}`)
   res.send(`reports = ${i}`)
 })
 
