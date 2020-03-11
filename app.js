@@ -2,9 +2,11 @@ const express = require('express')
 // const {Client} = require('pg')
 const app = express()
 const port = process.env.PORT || 3000
+const bodyParser = require("body-parser")
 // const client = new Client()
 // client.connect()
 
+app.use(bodyParser.json())
 
 const dots = require('./dots')
 let i = 0;
@@ -19,6 +21,11 @@ app.get('/', (req, res) => {
 app.get('/pacdots', (req, res) => {
   i++
   res.json(dots)
+})
+
+app.post('/location', (req, res) => {
+  console.log(req.body.location || "no location")
+  res.json({"resend": !req.body.location})
 })
 
 app.listen(port, () => {console.log(`app on port ${port}`)})
