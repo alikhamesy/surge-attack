@@ -25,6 +25,7 @@ app.get('/pacdots', (req, res) => {
 
 app.post('/location', (req, res) => {
   console.log(req.body.location || "no location")
+  console.log(req.body)
   res.json({"resend": !req.body.location})
 })
 
